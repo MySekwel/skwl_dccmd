@@ -21,8 +21,8 @@ sampctl package install MySekwel/skwl_dccmd
 Define your prefix above the include:
 
 ```pawn
-#define ZDC_PREFIX    "!" // Define your prefix before including the include
-#include <z_dccmd>
+#define SKWL_PREFIX    "!" // Define your prefix before including the include
+#include <skwl_dccmd>
 ```
 
 ## Usage

@@ -5,8 +5,6 @@ A Command Processor designed for discord-connector-plugin
 ## Dependencies
 
 You need these dependencies on your gamemode (NOT IN THE INCLUDE FOLDER ITSELF)
-- YSI Library:
-`sampctl package install pawn-lang/YSI-Includes:v5.4.102`
 - Discord Connector Plugin:
 `sampctl package install maddinat0r/samp-discord-connector:v0.3.5`
 

@@ -28,9 +28,7 @@ Define your prefix above the include:
 Copy the discord_bot_token format inside my pawn.json and add it to your pawn.json, don't forget the `extra`
 
 ```json
-"extra": {
-			"discord_bot_token": "changeme"
-		}
+"extra": { "discord_bot_token": "changeme" }
 ```
 
 ## Testing

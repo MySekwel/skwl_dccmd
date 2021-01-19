@@ -51,7 +51,7 @@ public DCC_OnMessageCreate(DCC_Message:message){
     return 1;
 }
 
-explode(aExplode[][], const sSource[], const sDelimiter[] = " ", iVertices = sizeof aExplode, iLength = sizeof aExplode[]){
+static explode(aExplode[][], const sSource[], const sDelimiter[] = " ", iVertices = sizeof aExplode, iLength = sizeof aExplode[]){
     new iNode, iPointer, iPrevious = -1, iDelimiter = strlen(sDelimiter);
 
     while(iNode < iVertices){
@@ -67,19 +67,4 @@ explode(aExplode[][], const sSource[], const sDelimiter[] = " ", iVertices = siz
         ++iNode;
     }
     return iPrevious;
-}
-
-stock GetDiscordName(DCC_User:user)
-{
-	new pname_[32];
-	DCC_GetUserName(user, pname_);
-	return pname_;
-}
-
-stock UserHasRole(DCC_User:user, DCC_Role:role)
-{
-	new bool:value;
-	new DCC_Guild:jGuild = DCC_FindGuildById(GUILD_ID);
-	DCC_HasGuildMemberRole(jGuild, user, role, value);
-	return value;
 }

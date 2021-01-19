@@ -10,9 +10,7 @@
 #define SendDC  DCC_SendChannelMessage
 #define DCMD    SKWLCMD
 #define DC_CMD  SKWLCMD
-#define SKWLCMD:%0(%1,%2)          \
-            forward skwl_cmd_%0(%1,%2[]); \
-            public skwl_cmd_%0(%1,%2[])
+#define SKWLCMD:%0(%1,%2) forward skwl_cmd_%0(%1,%2[]); public skwl_cmd_%0(%1,%2[])
 
 forward OnDCCommandPerformed(args[], success);
 
